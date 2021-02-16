@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="500px"
+        android:textSize="40px"
+        android:layout_height="80dp"
+        android:text="New Booking"
+        android:id="@+id/newbooking"
+
+
+        android:layout_centerInParent="true"/>
+    <Button
+        android:layout_width="500px"
+        android:textSize="40px"
+        android:layout_height="80dp"
+        android:text="Daily Report"
+        android:layout_below="@+id/newbooking"
+        android:id="@+id/dailyreport"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:layout_width="500px"
+        android:textSize="40px"
+        android:layout_height="80dp"
+        android:text="Monthly Report"
+        android:layout_below="@id/dailyreport"
+        android:id="@+id/monthlyreport"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:layout_width="500px"
+        android:textSize="40px"
+        android:layout_height="80dp"
+        android:text="Add Taxi"
+        android:layout_below="@id/monthlyreport"
+        android:id="@+id/addtaxt"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:layout_width="500px"
+        android:textSize="40px"
+        android:layout_height="80dp"
+        android:text="Add Destination"
+        android:layout_below="@id/addtaxt"
+        android:id="@+id/adddestination"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

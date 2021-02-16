@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/data"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/label"
+            android:textStyle="bold"
+            android:text="Select Taxi Number to Filter"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/taxinamespinner"
+            android:layout_below="@id/label"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchtaxi"
+            android:layout_below="@id/taxinamespinner"
+            android:text="Search"
+            android:layout_marginBottom="50dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dateselected"
+            android:textStyle="bold"
+            android:layout_below="@+id/searchtaxi"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalrevenuetoday"
+            android:textStyle="bold"
+            android:layout_below="@id/dateselected"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalbookingtoday"
+            android:layout_below="@id/totalrevenuetoday"
+            android:textStyle="bold"
+            />
+
+
+    </RelativeLayout>
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/datepicker"
+        android:visibility="visible"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Record"
+        android:layout_below="@id/datepicker"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/recordget"/>
+
+
+
+
+
+</RelativeLayout>
